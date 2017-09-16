@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title></title>
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/base.less" rel="stylesheet/less"/>
+    <link href="css/productlist.less" rel="stylesheet/less"/>
+    <script src="lib/less/less.js"></script>
+</head>
+<body>
+<!--头部开始-->
+<header class="header">
+    <a href="javascript:;" class="left">
+        <img src="images/header_logo.png" alt=""/>
+    </a>
+    <a href="javascript:;" class="right">
+        <img src="images/header_app.png" alt=""/>
+    </a>
+</header>
+<!--头部结束-->
+<!--搜索开始-->
+<section class="search">
+    <form action="" name="name">
+        <input type="search" placeholder="请输入你想比价的商品" />
+        <input type="submit" value="搜索"/>
+    </form>
+</section>
+<!--搜索结束-->
+<!--导航开始-->
+<nav class="product-nav">
+    <span><a href="index.html">首页</a> </span>
+    <span><a href="category.html">全部分类</a> </span>
+    <span class="title-name"></span>
+    <a href="javascript:;">筛选</a>
+</nav>
+<!--导航结束-->
+<!--产品列表开始-->
+<section class="recommend">
+    <!--<div class="rec-list">-->
+        <!--<div class="media">-->
+        <!--<div class="media-left">-->
+        <!--<a href="javascript:;">-->
+        <!--<img class="media-object" src="http://cacheimg.manmanbuy.com/r_img/cacheimg.aspx?width=600&imgurl=http://a.manmanbuy.com:8013/cuxiaoPic/201610/201610001412282758.jpg" alt="">-->
+        <!--</a>-->
+        <!--</div>-->
+        <!--<div class="media-body">-->
+        <!--<h4 class="media-heading">移动端凑单品：海天 鲜味 生抽 1.28L</h4>-->
+        <!--<p class="price red">10.9元</p>-->
+        <!--<span>京东商城10-25 14:10</span>-->
+        <!--<span>有1人评论</span>-->
+        <!--</div>-->
+        <!--</div>-->
+
+    <!--</div>-->
+</section>
+<!--产品列表结束-->
+<!--分页开始-->
+<section class="page">
+    <div class="row">
+        <div class="col-xs-4 pre"><a href="javascript:;">上一页</a> </div>
+        <div class="col-xs-4">
+            <select name="" class="select">
+                <!--<option value="">1/3</option>-->
+                <!--<option value="">2/3</option>-->
+                <!--<option value="">3/3</option>-->
+            </select>
+        </div>
+        <div class="col-xs-4 next"><a href="javascript:;" >下一页</a> </div>
+    </div>
+</section>
+<!--分页结束-->
+<!--底部开始-->
+<footer>
+    <div class="row">
+        <div class="col-xs-4">
+            <a href="javascript:;">登录</a>
+        </div>
+        <div class="col-xs-4">
+            <a href="javascript:;">注册</a>
+        </div>
+        <div class="col-xs-4">
+            <a href="javascript:;">返回顶部</a>
+        </div>
+    </div>
+    <p>
+        <a href="javascript:;" class="red">手机APP下载</a>
+        <a href="javascript:;">慢慢买手机版</a>
+        <a href="javascript:;">-- 掌上比价平台</a>
+    </p>
+    <p>m.manmanbuy.com</p>
+</footer>
+<!--底部结束-->
+<script type="text/html" id="productList">
+    {{each result as item i}}
+    <div class="rec-list">
+        <div class="media">
+            <div class="media-left">
+                <a href="productDetails.html?categoryid={{item.categoryId}}&productid={{item.productId}}">
+                   {{#item.productImg}}
+                </a>
+            </div>
+            <div class="media-body">
+                <h4 class="media-heading"> <a href="productDetails.html?categoryid={{item.categoryId}}&productid={{item.productId}}">{{item.productName}}</a></h4>
+                <p class="price red"><strong>{{item.productPrice}}</strong></p>
+                <span>{{item.productQuote}}</span>
+                <span>{{item.productCom}}</span>
+            </div>
+        </div>
+
+    </div>
+    {{/each}}
+</script>
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="js/url.js"></script>
+<script src="js/template.js"></script>
+<script src="js/productlist.js"></script>
+</body>
+</html>

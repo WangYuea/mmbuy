@@ -1,0 +1,33 @@
+@charset "utf-8";
+//分类开始
+.category{
+>ul{
+  >li{
+    >a{
+      display: block;
+      height: 40px;
+      padding: 10px;
+      font-size: 14px;
+      background: #ededed url("http://www.zuyushop.com/wap/images/arrow1.gif") right center no-repeat;
+      font-weight: bold;
+      border-bottom: 1px solid #666;
+    }
+    >ul{
+      display: none;
+      >li{
+        text-align: center;
+        float: left;
+        width: 33.33%;
+       border-right: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        height: 30px;
+        line-height: 30px;
+      }
+      >li:nth-child(3n){
+        border-right: none;
+      }
+    }
+  }
+}
+}
+//分类结束

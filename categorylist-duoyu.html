@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title></title>
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/base.css" rel="stylesheet"/>
+    <link href="css/categorylist.less" rel="stylesheet/less"/>
+    <script src="lib/less/less.js"></script>
+</head>
+<body>
+<!--头部开始-->
+<header class="header">
+    <a href="javascript:;" class="left">
+        <img src="images/header_logo.png" alt=""/>
+    </a>
+    <a href="javascript:;" class="right">
+        <img src="images/header_app.png" alt=""/>
+    </a>
+</header>
+<!--头部结束-->
+<!--搜索开始-->
+<section class="search">
+    <form action="" name="name">
+        <input type="search" placeholder="请输入你想比价的商品" />
+        <input type="submit" value="搜索"/>
+    </form>
+</section>
+<!--搜索结束-->
+<!--三级导航菜单开始-->
+<section class="cate-nav clearfix">
+    <ul class="left">
+        <li class="home"><a href="javascript:;">首页 ></a></li>
+        <li class="category-list"></li>
+        <li class="listObj"></li>
+    </ul>
+    <a href="javascript:;" class="right"><button>筛选</button></a>
+</section>
+<!--三级导航菜单结束-->
+<!--商品列表开始-->
+<section class="product">
+    <div class="media">
+        <div class="media-left">
+            <a href="#">
+                <img class="media-object" src="images/ic_bcj.png" alt="">
+            </a>
+        </div>
+        <div class="media-body">
+            <h4 class="media-heading">乐视TV（leiv) S50 Air全配版2D 50英寸全高清LED液晶电视</h4>
+            <p class="red">￥1999.00</p>
+            <span>报价（6）</span> <span>评论（2266）</span>
+        </div>
+    </div>
+    <div class="media">
+        <div class="media-left">
+            <a href="#">
+                <img class="media-object" src="images/ic_bcj.png" alt="">
+            </a>
+        </div>
+        <div class="media-body">
+            <h4 class="media-heading">乐视TV（leiv) S50 Air全配版2D 50英寸全高清LED液晶电视</h4>
+            <p class="red">￥1999.00</p>
+            <span>报价（6）</span> <span>评论（2266）</span>
+        </div>
+    </div>
+    <div class="media">
+        <div class="media-left">
+            <a href="#">
+                <img class="media-object" src="images/ic_bcj.png" alt="">
+            </a>
+        </div>
+        <div class="media-body">
+            <h4 class="media-heading">乐视TV（leiv) S50 Air全配版2D 50英寸全高清LED液晶电视</h4>
+            <p class="red">￥1999.00</p>
+            <span>报价（6）</span> <span>评论（2266）</span>
+        </div>
+    </div>
+    <div class="media">
+        <div class="media-left">
+            <a href="#">
+                <img class="media-object" src="images/ic_bcj.png" alt="">
+            </a>
+        </div>
+        <div class="media-body">
+            <h4 class="media-heading">乐视TV（leiv) S50 Air全配版2D 50英寸全高清LED液晶电视</h4>
+            <p class="red">￥1999.00</p>
+            <span>报价（6）</span> <span>评论（2266）</span>
+        </div>
+    </div>
+</section>
+<!--商品列表结束-->
+<!--分页开始-->
+<section class="page">
+        <ul class="pager">
+            <li>
+                <a href="#" aria-label="Previous">
+                  上一页
+                </a>
+            </li>
+            <li><select name="" class="select">
+                <option value="0">1/4</option>
+                <option value="1">2/4</option>
+                <option value="2">3/4</option>
+                <option value="3">4/4</option>
+            </select></li>
+            <li>
+                <a href="#" aria-label="Next">
+                  下一页
+                </a>
+            </li>
+        </ul>
+</section>
+<!--分页结束-->
+<!--底部开始-->
+<footer>
+    <div class="row">
+        <div class="col-xs-4">
+            <a href="javascript:;">登录</a>
+        </div>
+        <div class="col-xs-4">
+            <a href="javascript:;">注册</a>
+        </div>
+        <div class="col-xs-4">
+            <a href="javascript:;">返回顶部</a>
+        </div>
+    </div>
+    <p>
+        <a href="javascript:;" class="red">手机APP下载</a>
+        <a href="javascript:;">慢慢买手机版</a>
+        <a href="javascript:;">-- 掌上比价平台</a>
+    </p>
+    <p>m.manmanbuy.com</p>
+</footer>
+<!--底部结束-->
+<script type="text/html" id="cateList">
+    {{each result as item i}}
+    <a href="javascript:;" data-title-id={{item.titleId}}>{{item.title}} ></a>
+    {{/each}}
+</script>
+<script type="text/html" id="list">
+    {{each result as item i}}
+    <a href="javascript:;" data-title-id={{item.categoryId}}>{{item.category}} ></a>
+    {{/each}}
+</script>
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="js/url.js"></script>
+<script src="js/template.js"></script>
+<script src="js/categorylist.js"></script>
+</body>
+</html>

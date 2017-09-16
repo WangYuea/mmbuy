@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+//导航开始
+.nav{
+  background: #fff;
+  padding: 10px;
+  margin-top: 10px;
+  >.row{
+    >div{
+      //background: blue;
+      >a{
+        display: block;
+        text-align: center;
+        img{
+          width: 50px;
+          height: 50px;
+        }
+        p{
+          padding-top: 5px;
+          font-size: 12px;
+        }
+      }
+    }
+    >div:nth-last-child(-n+4){
+      display: none;
+    }
+  }
+}
+//导航结束
+//折扣推荐开始
+.recommend{
+  background: #fff;
+  >.rec-title{
+    height: 35px;
+    background: #ff841d;
+    line-height: 35px;
+    padding: 0 10px;
+    color: #fff;
+    >a{
+      img{
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+  >.rec-list{
+    >.media{
+      border-bottom: 1px solid #ccc;
+      padding: 10px;
+      margin-top: 0;
+      >.media-left{
+        >a{
+          img{
+            width: 100px;
+            height: 100px;
+          }
+        }
+      }
+      >.media-body{
+        >h4{
+          overflow: hidden;
+          font-size: 14px;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp:2;
+        }
+        >span{
+          color: #c0c0c0;
+        }
+      }
+    }
+  }
+  >.rec-more{
+    >a{
+      display: block;
+      border: 1px solid #ccc;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      margin: 10px 0;
+      border-radius: 10px;
+    }
+  }
+}
+//折扣推荐结束

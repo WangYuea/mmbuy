@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title></title>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet/less" href="css/base.less"/>
+    <link rel="stylesheet/less" href="css/sitenav.less"/>
+    <script src="lib/less/less.js"></script>
+</head>
+<body>
+<!--头部标题开始-->
+<header class="header-top">
+    <div class="left icon-left">
+        <a href="index.html" class="glyphicon glyphicon-menu-left"></a>
+    </div>
+    <h2>商场导航</h2>
+
+    <div class="app-load right"><a href="javascript:;">
+        <img src="images/header_app.png" alt=""/>
+    </a></div>
+
+</header>
+<!--头部标题结束-->
+<!--商城列表开始-->
+<section class="shopList">
+    <div class="shops">
+        <!--<a href="javascript:;">-->
+            <!--<img src="" alt=""/>-->
+            <!--京东商城-->
+        <!--</a>-->
+    </div>
+</section>
+<!--商城列表结束-->
+<!--导航开始-->
+<section class="coupon-nav">
+    <span><a href="index.html">首页</a> </span>
+    <span><a href="sitenav.html">商城导航</a> </span>
+</section>
+<!--导航结束-->
+<!--底部开始-->
+<footer>
+    <div class="row">
+        <div class="col-xs-4">
+            <a href="javascript:;">登录</a>
+        </div>
+        <div class="col-xs-4">
+            <a href="javascript:;">注册</a>
+        </div>
+        <div class="col-xs-4">
+            <a href="javascript:;">返回顶部</a>
+        </div>
+    </div>
+    <p>
+        <a href="javascript:;" class="red">手机APP下载</a>
+        <a href="javascript:;">慢慢买手机版</a>
+        <a href="javascript:;">-- 掌上比价平台</a>
+    </p>
+
+    <p>m.manmanbuy.com</p>
+</footer>
+<!--底部结束-->
+<script type="text/html" id="sitenav">
+    {{each result as item i}}
+    <a href="{{item.navHref}}">
+        <img src="{{item.navImg}}" alt=""/>
+        {{item.navTitle}}
+    </a>
+    {{/each}}
+</script>
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="js/url.js"></script>
+<script src="js/template.js"></script>
+<script src="js/sitenav.js"></script>
+</body>
+</html>

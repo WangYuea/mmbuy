@@ -1,0 +1,83 @@
+@charset "utf-8";
+//三级菜单导航开始
+.cate-nav {
+  background: #eee;
+  padding: 0 10px;
+  > ul {
+    height: 40px;
+    line-height: 40px;
+    margin: 0;
+    li {
+      margin-right: 10px;
+      float: left;
+    }
+  }
+  > a {
+    > button {
+      width: 50px;
+      height: 30px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background: #fff;
+    }
+  }
+}
+//三级菜单导航结束
+//商品列表开始
+.product {
+  margin-top: 2px;
+  background: #fff;
+  > .media {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    > .media-left {
+      img {
+        width: 100px;
+      }
+    }
+    > .media-body {
+      > h4 {
+        font-size: 14px;
+        color: #666;
+      }
+      > span {
+        color: #ccc;
+        font-size: 12px;
+      }
+    }
+  }
+}
+//商品列表结束
+//分页开始
+.page {
+  background: #fff;
+  > .pager {
+    width: auto;
+    margin: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 17%;
+    text-align: center;
+    list-style: none;
+    li {
+      float: left;
+      margin: 0 5px;
+      a {
+        background: #e2e2e2;
+        border-radius: 5px;
+        color: #000;
+      }
+      .select {
+        width: 70px;
+        padding: 0 18%;
+        margin: 0;
+        height: 31px;
+        option {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+//分页结束

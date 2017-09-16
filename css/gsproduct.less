@@ -1,0 +1,189 @@
+@charset "utf-8";
+//地区导航开始
+.gsproduct-nav {
+  background: #fff;
+  > .gsNav {
+    height: 50px;
+    border-bottom: 1px solid #ccc;
+    line-height: 50px;
+    position: relative;
+    > .navs {
+      padding-right: 50px;
+      ul {
+        width: 100%;
+        li {
+          cursor: pointer;
+          text-align: center;
+          width: 33%;
+          float: left;
+          a{
+            position: relative;
+            i{
+              width: 0;
+              height: 0;
+              top: 6px;
+              //top:1px;
+              left: 30px;
+              position: absolute;
+              border: 5px solid #fff;
+              //border-bottom-color: #ccc;
+              border-top-color: #666;
+              &.active{
+                top:1px;
+                border: 5px solid #fff;
+                border-bottom-color: #666;
+              }
+            }
+          }
+        }
+      }
+    }
+    > .gsSearch {
+      width: 46px;
+      position: absolute;
+      text-align: center;
+      border-left: 1px solid #ccc;
+      right: 0;
+      top: 0;
+      cursor: pointer;
+    i{
+      font-size: 18px;
+      color: #666;
+    }
+    }
+  }
+  >.gsContent{
+  > .jdCon {
+    display: none;
+    line-height: 40px;
+    background: #fff;
+    > ul {
+      li {
+        padding-left: 10px;
+        border-bottom: 1px solid #ccc;
+        a{
+          display: block;
+          &.active {
+            &:after {
+              content: ">";
+              float: right;
+              color: #e38d13;
+              margin-right: 10px;
+            }
+          }
+        }
+
+
+      }
+    }
+  }
+  > .gsCountry {
+    display: none;
+  }
+  > .gsPrice {
+    display: none;
+  }
+  }
+  > .searchCon {
+    display: none;
+    background: #f5f5f5;
+    > .priTop {
+      padding: 10px 50px 10px 10px;
+      position: relative;
+      height: 40px;
+      input {
+        width: 100%;
+        padding-left: 5px;
+        height: 30px;
+      }
+      button {
+        position: absolute;
+        width: 45px;
+        height: 30px;
+        border: 0;
+        right: 0;
+        top: 10px;
+      }
+    }
+    > .sortCon {
+      padding: 10px;
+      border-bottom: 1px solid #ccc;
+      h3 {
+        margin: 10px 0;
+      }
+      > .sortBtn {
+        a {
+          display: inline-block;
+          font-size: 12px;
+          padding: 7px 25px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          width: 24%;
+          text-align: center;
+          &.active{
+            background: #ff841d;
+          }
+        }
+      }
+    }
+    > .flCon {
+      padding: 10px;
+      h3 {
+        margin: 10px 0;
+      }
+      > .sortBtn {
+        a {
+          width:24%;
+          text-align: center;
+          display: inline-block;
+          font-size: 12px;
+          padding: 7px 25px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          margin-bottom: 5px;
+          &.active{
+            background: #ff841d;
+          }
+        }
+      }
+    }
+  }
+}
+
+//地区导航结束
+//产品列表开始
+.gsProduct {
+  padding: 10px;
+  > .container {
+    > .row {
+      div {
+        background: #fff;
+        border-right: 5px solid #f5f5f5;
+        border-bottom: 5px solid #f5f5f5;
+        text-align: center;
+        img {
+          width: 195px;
+          padding: 10px 0;
+        }
+        p {
+          height: 20px;
+          overflow: hidden;
+          text-align: left;
+          padding-left: 10px;
+        }
+        p:last-child {
+          color: red;
+          font-size: 16px;
+          span {
+            font-size: 12px;
+          }
+        }
+      }
+      div:nth-child(2n){
+        border-right: 0;
+      }
+    }
+  }
+}
+
+//产品列表结束

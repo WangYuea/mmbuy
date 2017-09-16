@@ -1,0 +1,46 @@
+@charset "utf-8";
+//商品列表开始
+.discountList{
+  background: #fff;
+  >.container{
+  >.row{
+    >.col-xs-6{
+      padding: 20px 0;
+      border-bottom: 1px solid #ccc;
+      border-right: 1px solid #ccc;
+      text-align: center;
+      img{
+        height: 120px;
+      }
+      >p{
+      padding:10px 15px 0 15px ;
+        text-align: left;
+        margin: 0;
+        &.dis-title{
+          height: 48px;
+          overflow: hidden;
+          white-space:pre-wrap;
+          text-overflow: ellipsis;
+         font-weight: bold;
+        }
+        &.dis-pri{
+          //height: 30px;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          color:#fea527;
+        }
+        &.dis-bt{
+          color:#ccc;
+          font-size: 12px;
+        }
+      }
+
+    }
+    >.col-xs-6:nth-child(2n){
+      border-right: 0;
+    }
+  }
+  }
+}
+//商品列表结束

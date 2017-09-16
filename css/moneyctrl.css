@@ -1,0 +1,32 @@
+@charset "utf-8";
+.header-top {
+  background: #ff841d;
+  height: 50px;
+  position: relative;
+}
+.header-top > .icon-left {
+  position: absolute;
+  left: 10px;
+  top: 15px;
+}
+.header-top > .icon-left a {
+  color: #fff;
+  font-size: 18px;
+}
+.header-top h2 {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 2px;
+  line-height: 50px;
+}
+.header-top > .app-load {
+  top: 8px;
+  position: absolute;
+  right: 10px;
+}
+.header-top > .app-load > a > img {
+  height: 34px;
+}

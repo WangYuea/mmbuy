@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title></title>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet/less" href="css/base.less"/>
+    <link rel="stylesheet/less" href="css/productcom.less"/>
+    <script src="lib/less/less.js"></script>
+</head>
+<body>
+<!--头部开始-->
+<header class="header">
+    <a href="javascript:;" class="left">
+        <img src="images/header_logo.png" alt=""/>
+    </a>
+    <a href="javascript:;" class="right">
+        <img src="images/header_app.png" alt=""/>
+    </a>
+</header>
+<!--头部结束-->
+<!--搜索开始-->
+<section class="search">
+    <form action="" name="name">
+        <input type="search" placeholder="请输入你想比价的商品"/>
+        <input type="submit" value="搜索"/>
+    </form>
+</section>
+<!--搜索结束-->
+<!--导航开始-->
+<nav class="product-nav">
+    <span><a href="index.html">首页</a> </span>
+    <span><a href="brandTitle.html">品牌大全</a> </span>
+    <span class="title-name"></span>
+</nav>
+<!--导航结束-->
+<!--产品评论开始-->
+<section class="productComments">
+    <div class="product clearfix">
+        <div class="imgs"></div>
+        <div class="texts"></div>
+    </div>
+    <div class="comments">
+        </div>
+    <!--<div class="comments">-->
+        <!--<div class="product clearfix">-->
+            <!--<div class="imgs"><img src="images/ic_kb.png" alt=""/></div>-->
+            <!--<div class="texts">11545415151</div>-->
+        <!--</div>-->
+        <!--<div class="com">-->
+            <!--<p class="clearfix"><span class="left">g**n</span><span class="right">2017/06/02</span></p>-->
+
+            <!--<p class="clearfix"><span class="left">★★★★★</span><span class="right">goumaizi jd</span></p>-->
+
+            <!--<p>-->
+                <!--使用了一周整体不错，主要是为了看纪录片和足球。装在窗户上有种大鱼缸的感觉哈！清晰度不错色彩也可以，应该说对得起2200的价格！还送了五年乐视会员，看英超所有比赛都free，但乐观乐视内容这块还不太丰富，应为家里也有百事通bestv和小米盒子，比</p>-->
+        <!--</div>-->
+    <!--</div>-->
+</section>
+<!--产品评论结束-->
+<!--底部开始-->
+<footer>
+    <div class="row">
+        <div class="col-xs-4">
+            <a href="javascript:;">登录</a>
+        </div>
+        <div class="col-xs-4">
+            <a href="javascript:;">注册</a>
+        </div>
+        <div class="col-xs-4">
+            <a href="javascript:;">返回顶部</a>
+        </div>
+    </div>
+    <p>
+        <a href="javascript:;" class="red">手机APP下载</a>
+        <a href="javascript:;">慢慢买手机版</a>
+        <a href="javascript:;">-- 掌上比价平台</a>
+    </p>
+
+    <p>m.manmanbuy.com</p>
+</footer>
+<!--底部结束-->
+<script type="text/html" id="productId">
+{{each result as item i}}
+
+    <div class="com">
+        <p class="clearfix one"><span class="left">{{item.comName}}</span><span class="right">{{item.comTime}}</span></p>
+
+        <p class="clearfix two"><span class="left">★★★★★</span><span class="right">{{item.comFrom}}</span></p>
+
+        <p class="three">
+           {{item.comContent}}</p>
+    </div>
+    {{/each}}
+</script>
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="js/url.js"></script>
+<script src="js/template.js"></script>
+<script src="js/productcom.js"></script>
+</body>
+</html>

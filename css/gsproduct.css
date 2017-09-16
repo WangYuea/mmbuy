@@ -1,0 +1,165 @@
+@charset "utf-8";
+.gsproduct-nav {
+  background: #fff;
+}
+.gsproduct-nav > .gsNav {
+  height: 50px;
+  border-bottom: 1px solid #ccc;
+  line-height: 50px;
+  position: relative;
+}
+.gsproduct-nav > .gsNav > .navs {
+  padding-right: 50px;
+}
+.gsproduct-nav > .gsNav > .navs ul {
+  width: 100%;
+}
+.gsproduct-nav > .gsNav > .navs ul li {
+  cursor: pointer;
+  text-align: center;
+  width: 33%;
+  float: left;
+}
+.gsproduct-nav > .gsNav > .navs ul li a {
+  position: relative;
+}
+.gsproduct-nav > .gsNav > .navs ul li a i {
+  width: 0;
+  height: 0;
+  top: 6px;
+  left: 30px;
+  position: absolute;
+  border: 5px solid #fff;
+  border-top-color: #666;
+}
+.gsproduct-nav > .gsNav > .navs ul li a i.active {
+  top: 1px;
+  border: 5px solid #fff;
+  border-bottom-color: #666;
+}
+.gsproduct-nav > .gsNav > .gsSearch {
+  width: 46px;
+  position: absolute;
+  text-align: center;
+  border-left: 1px solid #ccc;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+}
+.gsproduct-nav > .gsNav > .gsSearch i {
+  font-size: 18px;
+  color: #666;
+}
+.gsproduct-nav > .gsContent > .jdCon {
+  display: none;
+  line-height: 40px;
+  background: #fff;
+}
+.gsproduct-nav > .gsContent > .jdCon > ul li {
+  padding-left: 10px;
+  border-bottom: 1px solid #ccc;
+}
+.gsproduct-nav > .gsContent > .jdCon > ul li a {
+  display: block;
+}
+.gsproduct-nav > .gsContent > .jdCon > ul li a.active:after {
+  content: ">";
+  float: right;
+  color: #e38d13;
+  margin-right: 10px;
+}
+.gsproduct-nav > .gsContent > .gsCountry {
+  display: none;
+}
+.gsproduct-nav > .gsContent > .gsPrice {
+  display: none;
+}
+.gsproduct-nav > .searchCon {
+  display: none;
+  background: #f5f5f5;
+}
+.gsproduct-nav > .searchCon > .priTop {
+  padding: 10px 50px 10px 10px;
+  position: relative;
+  height: 40px;
+}
+.gsproduct-nav > .searchCon > .priTop input {
+  width: 100%;
+  padding-left: 5px;
+  height: 30px;
+}
+.gsproduct-nav > .searchCon > .priTop button {
+  position: absolute;
+  width: 45px;
+  height: 30px;
+  border: 0;
+  right: 0;
+  top: 10px;
+}
+.gsproduct-nav > .searchCon > .sortCon {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+.gsproduct-nav > .searchCon > .sortCon h3 {
+  margin: 10px 0;
+}
+.gsproduct-nav > .searchCon > .sortCon > .sortBtn a {
+  display: inline-block;
+  font-size: 12px;
+  padding: 7px 25px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 24%;
+  text-align: center;
+}
+.gsproduct-nav > .searchCon > .sortCon > .sortBtn a.active {
+  background: #ff841d;
+}
+.gsproduct-nav > .searchCon > .flCon {
+  padding: 10px;
+}
+.gsproduct-nav > .searchCon > .flCon h3 {
+  margin: 10px 0;
+}
+.gsproduct-nav > .searchCon > .flCon > .sortBtn a {
+  width: 24%;
+  text-align: center;
+  display: inline-block;
+  font-size: 12px;
+  padding: 7px 25px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+.gsproduct-nav > .searchCon > .flCon > .sortBtn a.active {
+  background: #ff841d;
+}
+.gsProduct {
+  padding: 10px;
+}
+.gsProduct > .container > .row div {
+  background: #fff;
+  border-right: 5px solid #f5f5f5;
+  border-bottom: 5px solid #f5f5f5;
+  text-align: center;
+}
+.gsProduct > .container > .row div img {
+  width: 195px;
+  padding: 10px 0;
+}
+.gsProduct > .container > .row div p {
+  height: 20px;
+  overflow: hidden;
+  text-align: left;
+  padding-left: 10px;
+}
+.gsProduct > .container > .row div p:last-child {
+  color: red;
+  font-size: 16px;
+}
+.gsProduct > .container > .row div p:last-child span {
+  font-size: 12px;
+}
+.gsProduct > .container > .row div:nth-child(2n) {
+  border-right: 0;
+}

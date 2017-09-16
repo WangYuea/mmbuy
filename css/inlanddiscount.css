@@ -1,0 +1,38 @@
+@charset "utf-8";
+.discountList {
+  background: #fff;
+}
+.discountList > .container > .row > .col-xs-6 {
+  padding: 20px 0;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  text-align: center;
+}
+.discountList > .container > .row > .col-xs-6 img {
+  height: 120px;
+}
+.discountList > .container > .row > .col-xs-6 > p {
+  padding: 10px 15px 0 15px ;
+  text-align: left;
+  margin: 0;
+}
+.discountList > .container > .row > .col-xs-6 > p.dis-title {
+  height: 48px;
+  overflow: hidden;
+  white-space: pre-wrap;
+  text-overflow: ellipsis;
+  font-weight: bold;
+}
+.discountList > .container > .row > .col-xs-6 > p.dis-pri {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #fea527;
+}
+.discountList > .container > .row > .col-xs-6 > p.dis-bt {
+  color: #ccc;
+  font-size: 12px;
+}
+.discountList > .container > .row > .col-xs-6:nth-child(2n) {
+  border-right: 0;
+}

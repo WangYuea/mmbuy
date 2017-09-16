@@ -1,0 +1,32 @@
+@charset "utf-8";
+.productComments {
+  background: #fff;
+}
+.productComments > .product {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+.productComments > .product > .imgs {
+  float: left;
+}
+.productComments > .product > .texts {
+  float: left;
+}
+.productComments > .comments > .com {
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+}
+.productComments > .comments > .com .one {
+  font-size: 12px;
+  color: #666;
+}
+.productComments > .comments > .com .one .left {
+  color: #ccc;
+}
+.productComments > .comments > .com .two .left {
+  color: #ff9d13;
+}
+.productComments > .comments > .com .two .right {
+  font-size: 12px;
+  color: #666;
+}

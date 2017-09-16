@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title></title>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet/less" href="css/base.less"/>
+    <link rel="stylesheet/less" href="css/gsproduct.less"/>
+    <script src="lib/less/less.js"></script>
+</head>
+<body>
+<!--头部标题开始-->
+<header class="header-top">
+    <div class="left icon-left">
+        <a href="index.html" class="glyphicon glyphicon-menu-left"></a>
+    </div>
+    <h2>凑单品</h2>
+
+    <div class="app-load right"><a href="javascript:;">
+        <img src="images/header_app.png" alt=""/>
+    </a></div>
+
+</header>
+<!--头部标题结束-->
+<!--地区导航开始-->
+<section class="gsproduct-nav clearfix">
+    <div class="gsNav">
+        <div class="navs clearfix">
+            <ul>
+            <li class="drop-down"><a href="javascript:;" >京东<i></i></a></li>
+            <li class="drop-down"><a href="javascript:;" >华北<i></i></a></li>
+            <li class="drop-down"><a href="javascript:;" >1元<i></i></a></li>
+        </ul>
+        </div>
+        <div class="gsSearch">
+            <i class="glyphicon glyphicon-search "></i>
+        </div>
+    </div>
+    <div class="gsContent">
+    <div class="shop jdCon">
+        <ul>
+            <!--<li ><a href="javascript:;" class="active">京东</a> </li>-->
+            <!--<li><a href="javascript:;">一号店</a> </li>-->
+            <!--<li><a href="javascript:;">天猫超市</a> </li>-->
+        </ul>
+    </div>
+    <div class="gsCountry jdCon">
+        <ul>
+            <!--<li><a href="javascript:;"  class="active"-->
+<!--&gt;华北（北京、山西等）</a></li>-->
+            <!--<li><a href="javascript:;">华东（北京、山西等）</a></li>-->
+            <!--<li><a href="javascript:;">华南（北京、山西等）</a></li>-->
+            <!--<li><a href="javascript:;">华中（北京、山西等）</a></li>-->
+            <!--<li><a href="javascript:;">西南（北京、山西等）</a></li>-->
+            <!--<li><a href="javascript:;">东北（北京、山西等）</a></li>-->
+            <!--<li><a href="javascript:;">西北（北京、山西等）</a></li>-->
+        </ul>
+    </div>
+    <div class="gsPrice jdCon">
+        <ul>
+            <li><a href="javascript:;"  class="active">全部价格</a> </li>
+            <li><a href="javascript:;">1-3元</a> </li>
+            <li><a href="javascript:;">3-5元</a> </li>
+            <li><a href="javascript:;">5-10元</a> </li>
+            <li><a href="javascript:;">10-15元</a> </li>
+            <li><a href="javascript:;">15元以上</a> </li>
+        </ul>
+    </div>
+
+    </div>
+    <div class="searchCon clearfix">
+        <div class="priTop ">
+            <input type="text" placeholder="搜索您想要的凑单品">
+            <i></i>
+            <button>搜索</button>
+        </div>
+        <div class="sortCon">
+            <h3>排序</h3>
+            <div class="sortBtn">
+                <a href="javascript:;" class="active">销量</a>
+                <a href="javascript:;" class="active">价格<i></i></a>
+                <a href="javascript:;">价格<i></i></a>
+            </div>
+        </div>
+        <div class="flCon">
+            <h3>分类</h3>
+            <div class="sortBtn">
+                <a href="javascript:;" class="active">全部</a>
+                <a href="javascript:;">家居<i></i></a>
+                <a href="javascript:;">数码<i></i></a>
+                <a href="javascript:;">办公<i></i></a>
+                <a href="javascript:;">个护<i></i></a>
+                <a href="javascript:;">食品<i></i></a>
+                <a href="javascript:;">母婴<i></i></a>
+                <a href="javascript:;">服饰<i></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+<!--地区导航结束-->
+<!--产品列表开始-->
+<section class="gsProduct">
+    <div class="container">
+        <div class="row">
+            <!--<div class="col-xs-6">-->
+                <!--<img src="images/ic_mall.png"/>-->
+                <!--<p>北京联通36元沃游特权卡含6.5G</p>-->
+                <!--<p><span>￥</span>0.01</p>-->
+            <!--</div>-->
+        </div>
+    </div>
+</section>
+<!--产品列表结束-->
+<!--底部开始-->
+<footer>
+    <div class="row">
+        <div class="col-xs-4">
+            <a href="javascript:;">登录</a>
+        </div>
+        <div class="col-xs-4">
+            <a href="javascript:;">注册</a>
+        </div>
+        <div class="col-xs-4">
+            <a href="javascript:;">返回顶部</a>
+        </div>
+    </div>
+    <p>
+        <a href="javascript:;" class="red">手机APP下载</a>
+        <a href="javascript:;">慢慢买手机版</a>
+        <a href="javascript:;">-- 掌上比价平台</a>
+    </p>
+
+    <p>m.manmanbuy.com</p>
+</footer>
+<!--底部结束-->
+<script type="text/html" id="gsProduct">
+{{each result as item i}}
+<div class="col-xs-6">
+    <img src="{{item.productImg}}"/>
+    <p>{{item.productName}}</p>
+    <p>{{item.productPrice}}</p>
+</div>
+    {{/each}}
+</script>
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="js/url.js"></script>
+<script src="js/template.js"></script>
+<script src="js/gsproduct.js"></script>
+</body>
+</html>

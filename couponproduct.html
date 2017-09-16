@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title></title>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet/less" href="css/base.less"/>
+    <link rel="stylesheet/less" href="css/couponproduct.less"/>
+    <script src="lib/less/less.js"></script>
+</head>
+<body>
+<!--头部标题开始-->
+<header class="header-top">
+    <div class="left icon-left">
+        <a href="coupon.html" class="glyphicon glyphicon-menu-left"></a>
+    </div>
+    <h2>肯德基优惠券</h2>
+    <div class="app-load right"><a href="javascript:;">
+        <img src="images/header_app.png" alt=""/>
+    </a></div>
+
+</header>
+<!--头部标题结束-->
+<!--列表开始-->
+<section class="recommend">
+    <div class="rec-list">
+        <!--<div class="media">-->
+        <!--<div class="media-left">-->
+        <!--<a href="javascript:;">-->
+        <!--<img class="media-object" src="http://cacheimg.manmanbuy.com/r_img/cacheimg.aspx?width=600&imgurl=http://a.manmanbuy.com:8013/cuxiaoPic/201610/201610001412282758.jpg" alt="">-->
+        <!--</a>-->
+        <!--</div>-->
+        <!--<div class="media-body">-->
+        <!--<h4 class="media-heading">移动端凑单品：海天 鲜味 生抽 1.28L</h4>-->
+        <!--<p><strong>10.9元</strong></p>-->
+        <!--<p class="red">京东商城10-25 14:10</p>-->
+        <!--</div>-->
+        <!--</div>-->
+    </div>
+</section>
+<!--列表结束-->
+<!--导航开始-->
+<section class="coupon-nav">
+    <span><a href="index.html">首页</a> </span>
+    <span><a href="coupon.html">优惠券</a> </span>
+    <span>肯德基优惠券</span>
+</section>
+<!--导航结束-->
+<!--底部开始-->
+<footer>
+    <div class="row">
+        <div class="col-xs-4">
+            <a href="javascript:;">登录</a>
+        </div>
+        <div class="col-xs-4">
+            <a href="javascript:;">注册</a>
+        </div>
+        <div class="col-xs-4">
+            <a href="javascript:;">返回顶部</a>
+        </div>
+    </div>
+    <p>
+        <a href="javascript:;" class="red">手机APP下载</a>
+        <a href="javascript:;">慢慢买手机版</a>
+        <a href="javascript:;">-- 掌上比价平台</a>
+    </p>
+
+    <p>m.manmanbuy.com</p>
+</footer>
+<!--底部结束-->
+<script type="text/html" id="couponproductId">
+    {{each result as item i}}
+    <div class="media">
+        <div class="media-left">
+            <a href="javascript:;">
+              {{#item.couponProductImg}}
+            </a>
+        </div>
+        <div class="media-body">
+            <h4 class="media-heading">{{item.couponProductName}}</h4>
+            <p><strong>{{item.couponProductPrice}}</strong></p>
+            <p class="red">{{item.couponProductTime}}</p>
+        </div>
+    </div>
+    {{/each}}
+</script>
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="js/url.js"></script>
+<script src="js/template.js"></script>
+<script src="js/couponproduct.js"></script>
+</body>
+</html>

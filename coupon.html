@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title></title>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet/less" href="css/base.less"/>
+    <link rel="stylesheet/less" href="css/coupon.less"/>
+    <script src="lib/less/less.js"></script>
+</head>
+<body>
+<!--头部标题开始-->
+<header class="header-top">
+    <div class="left icon-left">
+        <a href="index.html" class="glyphicon glyphicon-menu-left"></a>
+    </div>
+    <h2>优惠券</h2>
+    <div class="app-load right"><a href="javascript:;">
+        <img src="images/header_app.png" alt=""/>
+    </a></div>
+
+</header>
+<!--头部标题结束-->
+<!--图片列表开始-->
+<section class="imgList">
+    <div class="row">
+        <!--<div class="col-xs-4">-->
+            <!--<a href="javascript:;">-->
+            <!--<img src="images/ic_cu.png">-->
+            <!--<p>肯德基</p>-->
+            <!--</a>-->
+        <!--</div>-->
+       </div>
+    </div>
+</section>
+<!--图片列表结束-->
+<!--导航开始-->
+<section class="coupon-nav">
+<span><a href="index.html">首页</a> </span>
+<span>优惠券</span>
+</section>
+<!--导航结束-->
+<!--底部开始-->
+<footer>
+    <div class="row">
+        <div class="col-xs-4">
+            <a href="javascript:;">登录</a>
+        </div>
+        <div class="col-xs-4">
+            <a href="javascript:;">注册</a>
+        </div>
+        <div class="col-xs-4">
+            <a href="javascript:;">返回顶部</a>
+        </div>
+    </div>
+    <p>
+        <a href="javascript:;" class="red">手机APP下载</a>
+        <a href="javascript:;">慢慢买手机版</a>
+        <a href="javascript:;">-- 掌上比价平台</a>
+    </p>
+
+    <p>m.manmanbuy.com</p>
+</footer>
+<!--底部结束-->
+<script type="text/html" id="couponId">
+    {{each result as item i}}
+    <div class="col-xs-4">
+        <a href="{{item.couponLink}}?couponid={{item.couponId}}">
+            <img src="{{item.couponImg}}">
+            <p>{{item.couponTitle}}</p>
+        </a>
+    </div>
+    {{/each}}
+</script>
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="js/url.js"></script>
+<script src="js/template.js"></script>
+<script src="js/coupon.js"></script>
+</body>
+</html>

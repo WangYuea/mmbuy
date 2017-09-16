@@ -1,0 +1,238 @@
+@charset "utf-8";
+//产品介绍开始
+.proDomestic {
+  background: #fff;
+  padding: 10px;
+  > .dom-con {
+    h3 {
+      font-size: 16px;
+      font-weight: bold;
+      margin: 0;
+      padding: 10px 0;
+    }
+    > .dom-info {
+      font-size: 12px;
+      color: #ccc;
+      padding: 10px 0;
+    }
+    > .dom-imgRight {
+      width: 120px;
+      height: 120px;
+      float: right;
+      text-align: right;
+      overflow: hidden;
+      img {
+        width: 80px;
+        height: 100px;
+      }
+    }
+    > p {
+      font-size: 14px;
+      line-height: 24px;
+      padding-bottom: 20px;
+    }
+    > .dom-img {
+      text-align: center;
+      img{
+        width: 100%;
+      }
+    }
+  }
+}
+
+//产品列表结束
+//城市货源开始
+.dom-coun {
+  background: #fff;
+  padding-bottom: 20px;
+  > .dom-country {
+    > ul {
+      margin: 0 35%;
+      border: 1px solid #ccc;
+      > li {
+        margin: 0 10px;
+        padding: 5px 20px;
+        border-bottom: 1px solid #ccc;
+        > a {
+          font-size: 12px;
+          > span {
+            > strong {
+              color: #e38d13;
+              float: right;
+            }
+          }
+        }
+
+      }
+      > li:last-child {
+        border-bottom: 0;
+      }
+
+    }
+  }
+}
+
+//城市货源结束
+//前往购买开始
+.dom-buy {
+  background: #fff;
+  > .dom-buyBtn {
+    margin: 0 10px;
+    height: 30px;
+    background: #ffaf3e;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 30px;
+    a {
+      color: #fff;
+    }
+  }
+  > .dom-code {
+    margin: 10px 10px 0 10px;
+    border: 1px solid #ffa7a6;
+    padding: 10px;
+    > .left {
+      width: 55%;
+      > .code-text {
+        font-size: 12px;
+        line-height: 30px;
+        a {
+          color: #f00;
+        }
+      }
+      > .code-btn {
+        margin: 10px 5px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        border-radius: 20px;
+        background: #f00;
+        color: #fff;
+      }
+    }
+    > .right {
+      img {
+        width: 120px;
+      }
+    }
+  }
+}
+
+//前往购买结束
+//发表评论开始
+.comment {
+  background: #fff;
+  padding: 0 10px;
+  > .comment-con {
+    position: relative;
+    padding-top: 15px;
+
+      > .tit {
+        height: 30px;
+        line-height: 30px;
+        font-size: 16px;
+      }
+      >.reply{
+        position: relative;
+        textarea {
+          width: 100%;
+          resize: none;
+          outline: none;
+          height: 100px;
+        }
+        .ctrl{
+          position: absolute;
+          bottom: 5px;
+          left: 1px;
+          width: 99.8%;
+          background: #f5f5f5;
+          height: 35px;
+          >input{
+            float: right;
+            height: 35px;
+            background: #ffa628;
+            border: 0;
+            outline: none;
+            width: 100px;
+            color: #fff;
+          }
+        }
+      }
+
+      > .list {
+        > ul {
+          > li {
+            padding: 10px;
+            height: 60px;
+            position: relative;
+            top: 10px;
+            > .userimg {
+              position: absolute;
+              padding-right: 10px;
+              left: 0;
+              top: 0;
+              img {
+                width: 50px;
+              }
+            }
+            > .con {
+              width: 85%;
+              position: absolute;
+              left: 60px;
+              top: 0;
+              > .name {
+                > .username {
+                  float: left;
+                  color: #269abc;
+                }
+                > .time {
+                  //width: 100px;
+                  //text-align: right;
+                  float: right;
+                }
+              }
+              > .content {
+
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+//发表评论结束
+//最新评论开始
+.newComment {
+  background: #fff;
+  padding: 10px;
+  > .newComment-con {
+    > h3 {
+      font-size: 16px;
+    }
+    > .left {
+      img {
+        float: left;
+        width: 50px;
+      }
+      p {
+        float: left;
+        padding-left: 10px;
+        span {
+          display: block;
+          line-height: 24px;
+        }
+        span:first-child {
+          font-size: 12px;
+          color: #269abc;
+        }
+      }
+    }
+    > .right {
+      color: #ccc;
+    }
+  }
+}
+
+//最新评论结束

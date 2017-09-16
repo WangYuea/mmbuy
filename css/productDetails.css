@@ -1,0 +1,104 @@
+@charset "utf-8";
+.productShow {
+  background: #fff;
+  padding: 10px 0;
+}
+.productShow > .product-top {
+  text-align: center;
+  position: relative;
+  padding-bottom: 50px;
+}
+.productShow > .product-top h3 {
+  text-align: center;
+  line-height: 24px;
+  padding: 0 25px;
+  margin: 0;
+  margin-bottom: 25px;
+}
+.productShow > .product-top span {
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background: #4cae4c;
+  line-height: 50px;
+  text-align: center;
+  color: #fff;
+  right: 10px;
+  bottom: 10px;
+}
+.productShow > .product-con > .row {
+  border-bottom: 1px solid #cf6a00;
+  border-top: 1px solid #cf6a00;
+}
+.productShow > .product-con > .row > div {
+  height: 30px;
+  line-height: 30px;
+  background: #ffb01d;
+  text-align: center;
+  color: #fff;
+  border-right: 1px solid #cf6a00;
+}
+.productShow > .product-con > .row > div.active {
+  background: #ff841d;
+}
+.productShow > .product-con > .row > div:last-child {
+  border-right: 0;
+}
+.productShow > .product-pri {
+  height: 35px;
+  padding: 0 5px;
+  line-height: 35px;
+  border-bottom: 1px solid #ccc;
+}
+.productShow > .product-pri .p_pic {
+  width: 20px;
+}
+.productShow > .product-pri .red {
+  float: right;
+  margin-right: 10px;
+}
+.productShow > .product-des {
+  padding: 10px;
+}
+.appraise {
+  background: #fff;
+  padding-bottom: 10px;
+}
+.appraise > h3 {
+  background: #f5f5f5;
+  text-align: center;
+  padding: 10px 0;
+  margin: 0;
+}
+.appraise > .app-content {
+  padding-bottom: 10px;
+}
+.appraise > .app-content > .app-container {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+.appraise > .app-content > .app-container > .appraise-con {
+  padding: 10px;
+  font-size: 12px;
+  color: #ccc;
+}
+.appraise > .app-content > .app-container > .appraise-con > p {
+  margin: 0;
+}
+.appraise > .app-content > .app-container > .appraise-con > p span {
+  text-align: right;
+  display: block;
+}
+.appraise > .app-content > .app-container > .con-text {
+  font-size: 12px;
+  padding: 0 10px;
+}
+.appraise > p {
+  margin: 8px;
+  background: #f5f5f5;
+  border-radius: 5px;
+  padding: 5px 0;
+  text-align: center;
+}

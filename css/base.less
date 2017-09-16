@@ -1,0 +1,291 @@
+@charset "utf-8";
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ol,ul{
+  list-style: none;
+}
+input,select,form img,button{
+  vertical-align: middle;
+  -webkit-tap-highlight-color:transparent ;
+  outline: none;
+}
+.clearfix:after{
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.clearfix{
+  zoom:1;
+}
+textarea{
+  width: 95%;
+}
+a{
+  color: #000;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+a:hover,a:focus{
+  text-decoration: none;
+}
+table{
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+h1,h2,h3,h4,h5,h6{
+  font-size: 100%;
+}
+ul,ol,li{
+  list-style: none;
+}
+em,i{
+  font-style: normal;
+}
+img{
+  border: none;
+}
+input,img{
+  vertical-align: middle;
+}
+body{
+  color: #000;
+  font-family: arial;
+  overflow-x: hidden;
+  background-color: #f5f5f5;
+}
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+.red{
+  color: #f00;
+}
+//头部开始
+.header{
+  background: #ff841d;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 10px;
+  >.left{
+    >img{
+      height: 25px;
+    }
+  }
+  >.right{
+    >img{
+      height: 34px;
+    }
+  }
+}
+//头部结束
+//搜索开始
+.search{
+  background: #fff;
+  padding: 10px;
+  >form{
+    position: relative;
+    padding-right: 70px;
+    >input[type=search]{
+      width: 100%;
+      height: 30px;
+      border-radius: 15px;
+      padding-left: 15px;
+      border: 0;
+      background: #f5f5f5;
+    }
+    >input[type=submit]{
+      position: absolute;
+      right: 0;
+      border: 0;
+      top: 0;
+      height: 30px;
+      border-radius: 15px;
+      width: 64px;
+      color: #fff;
+      background: #ff841d;
+    }
+  }
+}
+//搜索结束
+//底部开始
+footer{
+  text-align: center;
+  >.row{
+    margin: 10px 0;
+    >div{
+      height: 30px;
+      line-height: 30px;
+      border:1px solid #ccc;
+    }
+    div+div{
+      border-left:0;
+    }
+  }
+}
+//底部结束
+//折扣推荐开始
+.recommend{
+  background: #fff;
+  >.rec-title{
+    height: 35px;
+    background: #ff841d;
+    line-height: 35px;
+    padding: 0 10px;
+    color: #fff;
+    >a{
+      img{
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+  >.rec-list{
+    >.media{
+      border-bottom: 1px solid #ccc;
+      padding: 10px;
+      margin-top: 0;
+      >.media-left{
+        >a{
+          img{
+            width: 100px;
+            height: 100px;
+          }
+        }
+      }
+      >.media-body{
+        >h4{
+          overflow: hidden;
+          font-size: 14px;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp:2;
+        }
+        >span{
+          color: #c0c0c0;
+        }
+      }
+    }
+  }
+  >.rec-more{
+    >a{
+      display: block;
+      border: 1px solid #ccc;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      margin: 10px 0;
+      border-radius: 10px;
+    }
+  }
+}
+//折扣推荐结束
+
+//导航开始
+.product-nav{
+  padding: 0 10px;
+  height: 40px;
+  line-height: 40px;
+  background: #eee;
+  >span{
+    float: left;
+    padding-right: 5px;
+    a:after{
+      padding-left: 5px;
+      content: ">";
+    }
+  }
+  >a{
+    padding: 0 10px;
+    border-radius: 5px;
+    background: #f5f5f5;
+    float: right;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 5px;
+  }
+}
+//导航结束
+//分页开始
+.page{
+  height: 40px;
+  background: #fff;
+  line-height: 40px;
+  text-align: center;
+  .row{
+    div{
+      a{
+        height: 30px;
+        padding: 0 10px;
+        background: #eee;
+        line-height: 30px;
+        border-radius: 5px;
+        display: inline-block;
+      }
+      select{
+        padding: 0 12px;
+        height: 30px;
+      }
+    }
+  }
+}
+//分页结束
+
+
+//分页头部导航开始
+.header-top {
+  background: #ff841d;
+  height: 50px;
+  position: relative;
+  > .icon-left {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    a {
+      color: #fff;
+      font-size: 18px;
+    }
+  }
+  h2 {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 50px;
+
+  }
+  > .app-load {
+    top: 8px;
+    position: absolute;
+    right: 10px;
+    > a {
+      > img {
+        height: 34px;
+      }
+    }
+  }
+}
+//分页头部导航结束
+
+
+
+//导航开始
+.coupon-nav{
+  line-height: 30px;
+  height: 30px;
+  background: #ccc;
+  padding: 0 10px;
+  span:after{
+    content: ">";
+  }
+}
+//导航结束

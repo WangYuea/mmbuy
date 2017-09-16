@@ -1,0 +1,195 @@
+@charset "utf-8";
+.proDomestic {
+  background: #fff;
+  padding: 10px;
+}
+.proDomestic > .dom-con h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+  padding: 10px 0;
+}
+.proDomestic > .dom-con > .dom-info {
+  font-size: 12px;
+  color: #ccc;
+  padding: 10px 0;
+}
+.proDomestic > .dom-con > .dom-imgRight {
+  width: 120px;
+  height: 120px;
+  float: right;
+  text-align: right;
+  overflow: hidden;
+}
+.proDomestic > .dom-con > .dom-imgRight img {
+  width: 80px;
+  height: 100px;
+}
+.proDomestic > .dom-con > p {
+  font-size: 14px;
+  line-height: 24px;
+  padding-bottom: 20px;
+}
+.proDomestic > .dom-con > .dom-img {
+  text-align: center;
+}
+.proDomestic > .dom-con > .dom-img img {
+  width: 100%;
+}
+.dom-coun {
+  background: #fff;
+  padding-bottom: 20px;
+}
+.dom-coun > .dom-country > ul {
+  margin: 0 35%;
+  border: 1px solid #ccc;
+}
+.dom-coun > .dom-country > ul > li {
+  margin: 0 10px;
+  padding: 5px 20px;
+  border-bottom: 1px solid #ccc;
+}
+.dom-coun > .dom-country > ul > li > a {
+  font-size: 12px;
+}
+.dom-coun > .dom-country > ul > li > a > span > strong {
+  color: #e38d13;
+  float: right;
+}
+.dom-coun > .dom-country > ul > li:last-child {
+  border-bottom: 0;
+}
+.dom-buy {
+  background: #fff;
+}
+.dom-buy > .dom-buyBtn {
+  margin: 0 10px;
+  height: 30px;
+  background: #ffaf3e;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 30px;
+}
+.dom-buy > .dom-buyBtn a {
+  color: #fff;
+}
+.dom-buy > .dom-code {
+  margin: 10px 10px 0 10px;
+  border: 1px solid #ffa7a6;
+  padding: 10px;
+}
+.dom-buy > .dom-code > .left {
+  width: 55%;
+}
+.dom-buy > .dom-code > .left > .code-text {
+  font-size: 12px;
+  line-height: 30px;
+}
+.dom-buy > .dom-code > .left > .code-text a {
+  color: #f00;
+}
+.dom-buy > .dom-code > .left > .code-btn {
+  margin: 10px 5px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 20px;
+  background: #f00;
+  color: #fff;
+}
+.dom-buy > .dom-code > .right img {
+  width: 120px;
+}
+.comment {
+  background: #fff;
+  padding: 0 10px;
+}
+.comment > .comment-con {
+  position: relative;
+  padding-top: 15px;
+}
+.comment > .comment-con > div > .tit {
+  height: 30px;
+  line-height: 30px;
+  font-size: 16px;
+}
+.comment > .comment-con > div > .reply {
+  position: relative;
+}
+.comment > .comment-con > div > .reply textarea {
+  width: 100%;
+  resize: none;
+  outline: none;
+  height: 100px;
+}
+.comment > .comment-con > div > .reply .ctrl {
+  position: absolute;
+  bottom: 5px;
+  left: 1px;
+  width: 99.8%;
+  background: #f5f5f5;
+  height: 35px;
+}
+.comment > .comment-con > div > .reply .ctrl > input {
+  float: right;
+  height: 35px;
+  background: #ffa628;
+  border: 0;
+  outline: none;
+  width: 100px;
+  color: #fff;
+}
+.comment > .comment-con > div > .list > ul > li {
+  padding: 10px;
+  height: 60px;
+  position: relative;
+  top: 10px;
+}
+.comment > .comment-con > div > .list > ul > li > .userimg {
+  position: absolute;
+  padding-right: 10px;
+  left: 0;
+  top: 0;
+}
+.comment > .comment-con > div > .list > ul > li > .userimg img {
+  width: 50px;
+}
+.comment > .comment-con > div > .list > ul > li > .con {
+  width: 85%;
+  position: absolute;
+  left: 60px;
+  top: 0;
+}
+.comment > .comment-con > div > .list > ul > li > .con > .name > .username {
+  float: left;
+  color: #269abc;
+}
+.comment > .comment-con > div > .list > ul > li > .con > .name > .time {
+  float: right;
+}
+.newComment {
+  background: #fff;
+  padding: 10px;
+}
+.newComment > .newComment-con > h3 {
+  font-size: 16px;
+}
+.newComment > .newComment-con > .left img {
+  float: left;
+  width: 50px;
+}
+.newComment > .newComment-con > .left p {
+  float: left;
+  padding-left: 10px;
+}
+.newComment > .newComment-con > .left p span {
+  display: block;
+  line-height: 24px;
+}
+.newComment > .newComment-con > .left p span:first-child {
+  font-size: 12px;
+  color: #269abc;
+}
+.newComment > .newComment-con > .right {
+  color: #ccc;
+}

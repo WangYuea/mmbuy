@@ -1,0 +1,142 @@
+//头部标题开始
+.header-top {
+  background: #fe4a65;
+}
+//头部标题结束
+//导航开始
+.nav {
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+  border-bottom: 2px solid #ccc;
+  .navCon {
+    width: 220%;
+    height: 35px;
+    height: 35px;
+    line-height: 35px;
+    a {
+      display: block;
+      float: left;
+      margin: 0 10px;
+      &.active {
+        color: #fe4a65;
+        border-bottom: 1px solid #fe4a65;
+        border-bottom: 1px solid #fe4a65;
+      }
+    }
+  }
+}
+
+//导航结束
+//列表开始
+.recommend {
+  > .rec-list {
+    > .media {
+      padding-bottom: 10px;
+      border-bottom: 5px solid #ccc;
+      > .media-body {
+        > .media-heading {
+          font-weight: bold;
+        }
+        > .price {
+          > em {
+            font-size: 10px;
+            padding: 0 5px;
+          }
+          > del {
+            padding-left: 10px;
+            font-size: 12px;
+            color: #ccc;
+          }
+        }
+        > .progess {
+          line-height: 15px;
+          > .bar {
+            > i {
+              width: 100px;
+              height: 15px;
+              float: left;
+              text-align: center;
+              border-radius: 10px;
+              background: #dca7a7;
+              color: #fff;
+              border: 1px solid #fe4a65;
+              margin-right: 10px;
+              position: relative;
+              > em {
+                position: absolute;
+                z-index: 1;
+                left: 0;
+                top: 0;
+                height: 13px;
+                border-radius: 10px;
+                display: block;
+                background: #fe4a65;
+              }
+              > span {
+                display: block;
+                position: absolute;
+                z-index: 3;
+                left: 50%;
+               transform: translateX(-50%);
+                font-size: 12px;
+                color: #fff;
+              }
+            }
+            >b{
+              font-size: 12px;
+              font-weight: normal;
+              color: red;
+            }
+          }
+
+        }
+        > .coupons {
+          padding: 10px 0;
+          >a:first-child{
+            display: block;
+            float: left;
+            font-size: 12px;
+            padding: 5px;
+            color: red;
+            border:1px dashed red;
+          }
+          >a:last-child{
+            display: block;
+            float: right;
+            padding: 5px;
+            background: #fe4a65;
+            color: #fff;
+            border-radius: 5px;
+          }
+          //> .moneyCou {
+          //  height: 30px;
+          //  float: left;
+          //  width: 120px;
+          //  display: block;
+          //  border: 1px dashed #fe4a65;
+          //  font-size: 12px;
+          //  line-height: 30px;
+          //  text-align: center;
+          //}
+          //> .buyBtn {
+          //  border: 1px solid #dca7a7;
+          //  border-radius: 5px;
+          //  display: block;
+          //  text-align: center;
+          //  width: 65px;
+          //  height: 30px;
+          //  font-size: 12px;
+          //  color: #fff;
+          //  background: #fe4a65;
+          //  line-height: 30px;
+          //  float: right;
+          //
+          //}
+        }
+      }
+    }
+  }
+}
+
+//列表结束

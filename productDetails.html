@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title></title>
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/base.less" rel="stylesheet/less"/>
+    <link href="css/productDetails.less" rel="stylesheet/less"/>
+    <script src="lib/less/less.js"></script>
+</head>
+<body>
+<!--头部开始-->
+<header class="header">
+    <a href="javascript:;" class="left">
+        <img src="images/header_logo.png" alt=""/>
+    </a>
+    <a href="javascript:;" class="right">
+        <img src="images/header_app.png" alt=""/>
+    </a>
+</header>
+<!--头部结束-->
+<!--搜索开始-->
+<section class="search">
+    <form action="" name="name">
+        <input type="search" placeholder="请输入你想比价的商品"/>
+        <input type="submit" value="搜索"/>
+    </form>
+</section>
+<!--搜索结束-->
+<!--导航开始-->
+<nav class="product-nav">
+    <span><a href="index.html">首页</a> </span>
+    <span class="title"></span>
+    <span><a href="javascript:;" class="title-name"></a> </span>
+    <a href="javascript:;">筛选</a>
+</nav>
+<!--导航结束-->
+<!--产品展示开始-->
+<section class="productShow">
+    <!--<div class="product-top ">-->
+        <!--<h3>乐视TV（Letv）S50全配2d 50英寸 全高清LED液晶电视</h3>-->
+        <!--<img src="images/ic_bcj.png"/>-->
+        <!--<span>收藏</span>-->
+    <!--</div>-->
+    <!--<div class="product-con">-->
+        <!--<div class="row">-->
+            <!--<div class="col-xs-4 active">比价购买</div>-->
+            <!--<div class="col-xs-4">产品参数</div>-->
+            <!--<div class="col-xs-4">评价（2322）</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="product-pri">-->
+        <!--<span class="left">京东商城</span>-->
+        <!--<a href="javascript:;" class="right">去购买</a>-->
+        <!--<span class="right red"><strong>￥1999.00</strong></span>-->
+    <!--</div>-->
+    <!--<div class="product-des">-->
+        <!--*实际价格以备案网站的实际售出为准，我们提供的价格可能有数小时至数日的延迟。-->
+    <!--</div>-->
+</section>
+<!--产品展示结束-->
+<!--评论开始-->
+<section class="appraise">
+    <h3>网友评价</h3>
+<div class="app-content">
+    <!--<div class="app-container">-->
+    <!--<div class="appraise-con clearfix">-->
+        <!--<span class="name left">xxxxx</span>-->
+
+        <!--<p class="right"><span class="time">2016/4/29</span><span class="buyFrom">购买自：京东商城</span></p>-->
+    <!--</div>-->
+    <!--<div class="con-text">-->
+        <!--实际价格以备案网站的实际售出为准，我们提供的价格可能有数小时至数日的延迟实际价格以备案网站的实际售出为准，我们提供的价格可能有数小时至数日的延迟实际价格以备案网站的实际售出为准，我们提供的价格可能有数小时至数日的延迟实际价格以备案网站的实际售出为准，我们提供的价格可能有数小时至数日的延迟实际价格以备案网站的实际售出为准，我们提供的价格可能有数小时至数日的延迟实际价格以备案网站的实际售出为准，我们提供的价格可能有数小时至数日的延迟实际价格以备案网站的实际售出为准，我们提供的价格可能有数小时至数日的延迟-->
+    <!--</div>-->
+    <!--</div>-->
+
+</div>
+
+    <p><a href="javascript:;">查看更多评价</a> </p>
+</section>
+<!--评论结束-->
+<!--底部开始-->
+<footer>
+    <div class="row">
+        <div class="col-xs-4">
+            <a href="javascript:;">登录</a>
+        </div>
+        <div class="col-xs-4">
+            <a href="javascript:;">注册</a>
+        </div>
+        <div class="col-xs-4">
+            <a href="javascript:;">返回顶部</a>
+        </div>
+    </div>
+    <p>
+        <a href="javascript:;" class="red">手机APP下载</a>
+        <a href="javascript:;">慢慢买手机版</a>
+        <a href="javascript:;">-- 掌上比价平台</a>
+    </p>
+
+    <p>m.manmanbuy.com</p>
+</footer>
+<!--底部结束-->
+<script type="text/html" id="getCon">
+    {{each result as item i}}
+    <div class="product-top ">
+        <h3>{{item.productName}}</h3>
+        {{#item.productImg}}
+        <span>收藏</span>
+    </div>
+    <div class="product-con">
+        <div class="row">
+            <div class="col-xs-4 active">比价购买</div>
+            <div class="col-xs-4">产品参数</div>
+            <div class="col-xs-4">评价（2322）</div>
+        </div>
+    </div>
+    <div class="product-pri">
+       {{#item.bjShop}}
+    </div>
+    <div class="product-des">
+        *实际价格以备案网站的实际售出为准，我们提供的价格可能有数小时至数日的延迟。
+    </div>
+    {{/each}}
+</script>
+<script type="text/html" id="appraise">
+    {{each result as item i}}
+    <div class="app-container">
+        <div class="appraise-con clearfix">
+            <span class="name left">{{item.comName}}</span>
+
+            <p class="right"><span class="time">{{item.comTime}}</span><span class="buyFrom">{{item.comFrom}}</span></p>
+        </div>
+        <div class="con-text">
+           {{item.comContent}}
+        </div>
+    </div>
+    {{/each}}
+</script>
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="js/url.js"></script>
+<script src="js/template.js"></script>
+<script src="js/productDetails.js"></script>
+</body>
+</html>
